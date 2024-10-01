@@ -1,0 +1,13 @@
+[package]
+name = "tesseractd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tesseract-grpc = { path = "../grpc" }
+tokio = { version = "1", features = ["full"] }
+toml = "0.8"
+tower = "0.5"
+hyper-util = { version = "0.1", features = ["tokio"] }
+serde = { version = "1", features = ["derive"] }
+eyre = "0.6"
